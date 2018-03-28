@@ -1,0 +1,2 @@
+.links .block{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#15a779}.links .block>div{padding:1em}.links .block svg{color:#15a779;width:auto;height:3em}.links .block h2{font-size:unset;margin-top:1vh;margin-bottom:1vh;font-weight:bold}@media (max-width: 800px){.links .block{width:unset;min-width:unset;padding:0;margin-bottom:unset;height:25vh}.links .block>div{padding:initial;width:80%}.links .block h2{margin-top:7%;margin-bottom:initial}.links .block svg{width:unset;height:5em}}
+/*# sourceMappingURL=index.css.map */

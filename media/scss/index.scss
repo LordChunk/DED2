@@ -1,0 +1,70 @@
+//Import colour pallette
+@import "colour";
+
+$icon_colour: #15a779;
+$block_size: 20%;
+
+.links {
+    .block {
+        
+        //Allign items in middle of div
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        > div {
+            padding: 1em;
+        }
+        
+        //Align mutli line text                
+        text-align: center;
+
+        //Set link colour to icon colour
+        color: $icon_colour;
+        
+        svg {            
+            color: $icon_colour;
+            width: auto;
+            height: 3em;
+        }
+
+        h2 {            
+            font-size: unset;
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+            font-weight: bold;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .links {
+        .block {
+            //Reset usual block values
+            width: unset;
+            min-width: unset;
+            padding: 0;
+            margin-bottom: unset;
+            
+            //Set height for each tile
+            height: 25vh;
+            > div {
+                //reset wide screen padding
+                padding: initial;
+                width: 80%;
+            }
+
+            h2 {
+                margin-top: 7%;
+                margin-bottom: initial;
+            }
+
+            svg {
+                width: unset;
+                //Style height instead of width for better sizing
+                height: 5em;
+            }
+        }
+    }
+}

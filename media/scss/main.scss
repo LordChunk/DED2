@@ -1,0 +1,53 @@
+//Import colour pallette
+@import "colour";
+
+* {
+    //Disable blue outline
+    outline: none;
+}
+
+//Sticky footer styling
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+//Style SVG's in collections the same way as <i> tags
+.collapsible-header svg {
+    width: 2rem;
+    font-size: 1.6rem;
+    display: inline-block;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+//Colour nav and footer appropriately
+nav {
+    //Replaced with colour class from materialize
+    //green lighten-1
+    // background: $nav_colour; 
+
+    //Fix nav text overlay bug
+    .brand-logo {
+        position: initial !important;
+    }
+}
+
+footer {
+    background: $nav_colour !important;
+}
+
+
+//fast bold styling
+.bold {
+    font-weight: bold;
+}
+
+.light {
+    font-weight: lighter;
+}
